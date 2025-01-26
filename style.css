@@ -14,8 +14,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.png);
-    background-size: cover;
+    background-image: url(images/pic2.jpg);
+    background-size:cover;
     background-position: center ;
 
 }
@@ -182,16 +182,19 @@ transition: 0.5s;
     padding: 50px 0;
 }
 .work-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    grid-gap: 40px;
-    margin-top: 50px;
+    display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
 
 }
 .work{
-    border-radius: 10px;
     position: relative;
-    overflow: hidden;
+  width: 48%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .work img{
     width: 100%;
